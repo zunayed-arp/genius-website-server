@@ -21,6 +21,7 @@ async function run() {
 	try {
 
 		await client.connect();
+		console.log('database connect')
 		const database = client.db('carMecanic');
 		const servicesCollection = database.collection('services');
 
